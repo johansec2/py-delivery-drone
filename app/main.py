@@ -52,7 +52,7 @@ class FlyingRobot(BaseRobot):
             self.coords.append(coords[2])
         else:
             super().__init__(name=name, weight=weight, coords=None)
-            self.coords.append(0) 
+            self.coords.append(0)
 
     def go_up(self, step: int = 1) -> None:
         self.coords[2] += step
